@@ -72,13 +72,13 @@ nav a {
 }
 
 h1 {
-  font-size: clamp(48px, 7vw, 86px);
-  line-height: .95;
-  margin-bottom: 24px;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.05;
+  margin-bottom: 18px;
 }
 
 .intro {
-  font-size: 21px;
+  font-size: 20px;
   max-width: 620px;
   color: #555;
   margin-bottom: 32px;
@@ -98,13 +98,16 @@ h1 {
 .hero-image {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
-  width: 260px;
-  height: 340px;
-  object-fit: cover;
+  width: min(100%, 380px);
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   border-radius: 30px;
+  display: block;
 }
 
 section {
@@ -152,6 +155,25 @@ section p {
 #contact a {
   color: #b76e79;
   font-weight: 700;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
