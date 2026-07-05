@@ -102,9 +102,9 @@ h1 {
 }
 
 .hero-image img {
-  width: min(100%, 380px);
+  width: min(100%, 365px);
   height: auto;
-  max-height: 500px;
+  max-height: 485px;
   object-fit: contain;
   border-radius: 30px;
   display: block;
